@@ -1,9 +1,3 @@
-<p align="center">
-  <a href="https://github.com/kettanaito/naming-cheatsheet">
-    <img src="./naming-cheatsheet.png" alt="Naming cheatsheet" />
-  </a>
-</p>
-
 # Naming cheatsheet
 
 - [English language](#english-language)
@@ -18,8 +12,6 @@
     - [Context](#context)
     - [Prefixes](#prefixes)
 - [Singular and Plurals](#singular-and-plurals)
-
----
 
 Naming things is hard. This sheet attempts to make it easier.
 
@@ -119,8 +111,6 @@ const isDisabled = itemCount <= 3
 return <Button disabled={isDisabled} />
 ```
 
----
-
 # Naming functions
 
 ## A/HC/LC Pattern
@@ -142,8 +132,6 @@ Take a look at how this pattern may be applied in the table below.
 
 > **Note:** The order of context affects the meaning of a variable. For example, `shouldUpdateComponent` means _you_ are about to update a component, while `shouldComponentUpdate` tells you that _component_ will update on itself, and you are but controlling when it should be updated.
 > In other words, **high context emphasizes the meaning of a variable**.
-
----
 
 ## Actions
 
@@ -258,9 +246,6 @@ function handleLinkClick() {
 
 link.addEventListener('click', handleLinkClick)
 ```
-
----
-
 ## Context
 
 A domain that a function operates on.
@@ -280,8 +265,6 @@ function getRecentPosts(posts) {
 ```
 
 > Some language-specific assumptions may allow omitting the context. For example, in JavaScript, it's common that `filter` operates on Array. Adding explicit `filterArray` would be unnecessary.
-
---
 
 ## Prefixes
 
